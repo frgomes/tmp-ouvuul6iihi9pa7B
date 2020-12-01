@@ -17,11 +17,10 @@ package object controllers {
     protected val mockCC: ControllerComponents = stubControllerComponents()
   }
 
-  val message1 = "Message1"
-  val messageJson: JsValue = Json.parse(
+  def messageJson(message: String): JsValue = Json.parse(
     s"""
       |{
-      |   "message": "$message1"
+      |   "message": "$message"
       |}
     """.stripMargin)
 

@@ -2,6 +2,7 @@
 
 !.gitignore
 
+**/*~
 .cache
 /.classpath
 db
@@ -22,6 +23,7 @@ modules
 /out
 precompiled
 /.project
+project/metals.sbt
 project/project
 project/target
 /RUNNING_PID

@@ -17,7 +17,7 @@ def test(scope: String) = Seq(
 lazy val root = (project in file("."))
     .settings(name := "ddcw-technical-test",
       organization := "com.hmrc",
-      scalaVersion := "2.12.3",
+      scalaVersion := "2.12.12",
       libraryDependencies ++= compileDeps ++ test("test"),
       PlayKeys.playDefaultPort := 1235)
   .enablePlugins(PlayScala)
